@@ -19,7 +19,6 @@
             background-attachment: fixed;
             font-family: Arial, sans-serif;
             color: #e0f7fa;
-            scroll-behavior: smooth;
             background-color: #0a1a33; /* Matches color with background image */
         }
 
@@ -75,26 +74,7 @@
             background-color: #00509e;
             transform: scale(1.05);
         }
-
-        /* Section styling */
-        section {
-            margin: 30px 0;
-            width: 80%;
-            max-width: 800px;
-            padding: 20px;
-            background-color: rgba(0, 38, 77, 0.8);
-            border-radius: 10px;
-            color: #e0f7fa;
-            text-align: center;
-        }
     </style>
-    <script>
-        // Function to log button clicks and redirect
-        function handleButtonClick(event, sectionId) {
-            console.log('Button clicked:', event.target.textContent);
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </head>
 <body>
 
@@ -106,32 +86,11 @@
 
     <div class="button-container">
         <!-- Buttons for navigation -->
-        <a href="https://masionz7074.github.io/Our-Server/#discord" onclick="handleButtonClick(event, 'discord')" class="button">Discord</a>
-        <a href="https://masionz7074.github.io/Our-Server/#info" onclick="handleButtonClick(event, 'info')" class="button">Info</a>
-        <a href="https://masionz7074.github.io/Our-Server/#application" onclick="handleButtonClick(event, 'application')" class="button">Application</a>
-        <a href="https://masionz7074.github.io/Our-Server/#credits" onclick="handleButtonClick(event, 'credits')" class="button">Credits</a>
+        <a href="https://discord.gg/gju9QFFrNj" target="_blank" class="button">Discord</a>
+        <a href="#info" class="button">Info</a>
+        <a href="#application" class="button">Application</a>
+        <a href="#credits" class="button">Credits</a>
     </div>
-
-    <!-- Page sections -->
-    <section id="discord">
-        <h2>Discord</h2>
-        <p>Join our Discord community to connect with other players!</p>
-    </section>
-
-    <section id="info">
-        <h2>Info</h2>
-        <p>Learn more about our server, rules, and gameplay mechanics.</p>
-    </section>
-
-    <section id="application">
-        <h2>Application</h2>
-        <p>Submit your application to join the Treasure Smp.</p>
-    </section>
-
-    <section id="credits">
-        <h2>Credits</h2>
-        <p>Thanks to everyone who made this server possible!</p>
-    </section>
 
 </body>
 </html>
